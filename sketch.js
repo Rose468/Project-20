@@ -13,6 +13,7 @@ function setup() {
   wall.shapeColor =color(80,80,80);
   speed=random(223,321);
   weight=random(30,52)
+  bullet.velocityX = 5;
   
 }
 
@@ -42,7 +43,7 @@ else{
 function hasCollided(lbullet,lwall){
 bulletRightEdge=lbullet.x +lbullet.width;
 wallLeftEdge=lwall.x;
-if(bulletRightEdge>=WallLeftEdge){
+if(bulletRightEdge>=wallLeftEdge){
   return true;
 }
 else{

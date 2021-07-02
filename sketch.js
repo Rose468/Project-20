@@ -13,7 +13,7 @@ function setup() {
   wall.shapeColor =color(80,80,80);
   speed=random(223,321);
   weight=random(30,52)
-  bullet.velocityX = 30;
+  bullet.velocityX = 20;
   
 }
 
